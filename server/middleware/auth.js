@@ -5,9 +5,6 @@ const SECRET = process.env.SECRET_KEY;
 const auth = async (req, res, next) => {
     let token = req.cookies.access_token;
 
-
-    console.log(token);
-
     if (!token)
         return res.status(403).json({
             status: 403,

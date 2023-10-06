@@ -89,8 +89,6 @@ const login = async (req, res) => {
             expiresIn: "2h",
         });
 
-        console.log(token);
-
         // return user
         res
             .status(200)
